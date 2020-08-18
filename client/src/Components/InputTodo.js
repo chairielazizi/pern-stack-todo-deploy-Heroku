@@ -8,13 +8,13 @@ const InputTodo = () => {
     try {
       const body = { description };
       // need the await for the async to finish
-      const response = await fetch("http://localhost:5000/todos", {
+      const response = await fetch("/todos", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
       console.log(response);
-      window.location = "/";
+      // window.location = "/";
     } catch (err) {
       console.error(err.message);
     }

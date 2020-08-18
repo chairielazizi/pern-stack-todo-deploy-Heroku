@@ -1,0 +1,6 @@
+the order heroku run your scripts
+
+1. heroku-prebuild (run before dependencies are install)
+2. npm install (read package.json and see what dependencies need to be install)
+3. heroku-postbuild (run after dependencies are install)
+4. run start script (this where the node server.js happen)
